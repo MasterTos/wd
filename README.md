@@ -40,6 +40,7 @@ exit
 ```
 sudo su wd
 wget http://10.0.2.219/rapidminer-studio-9.5.1.zip -O ~/rapidminer-studio-9.5.1.zip
-unzip ~/rapidminer-studio-9.5.1.zip
+cd ~
+unzip rapidminer-studio-9.5.1.zip
 exit
 ```
