@@ -1,10 +1,18 @@
 # wd
-
-## 1. Install openjdk-8
+## Usage
+### 1. Login as wd user
+### 2. Open Terminal
+### 3. Active miniconda
 ```
-sudo scp room107@10.0.2.220:/var/cache/apt/archives/* /var/cache/apt/archives/
+source ~/miniconda/bin/active
+```
+### 4. Open Rapidminer Studio
+```
+cd ~/
 ```
 
+## Installation
+### 1. Install openjdk-8
 ```
 sudo add-apt-repository ppa:openjdk-r/ppa -y
 sudo apt-get update
@@ -13,7 +21,7 @@ sudo update-alternatives --config java
 sudo update-alternatives --config javac
 ```
 
-## 2. Install docker
+### 2. Install docker
 ```
 sudo curl https://get.docker.com | bash
 sudo rm /usr/local/bin/docker-compose
@@ -21,25 +29,25 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-## 3. Create user
+### 3. Create user
 ```
 sudo useradd -m wd
 sudo usermod -aG docker wd
 sudo passwd wd
 ```
 
-## 4. install miniconda
+### 4. Install miniconda
 ```
 sudo su wd
-wget http://10.0.2.219/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/miniconda
 exit
 ```
 
-## 5. install rapidminer studio
+### 5. Install rapidminer studio
 ```
 sudo su wd
-wget http://10.0.2.219/rapidminer-studio-9.5.1.zip -O ~/rapidminer-studio-9.5.1.zip
+wget https://releases.rapidminer.com/latest/rapidminer-studio/rapidminer-studio.zip -O ~/rapidminer-studio-9.5.1.zip
 cd ~
 unzip rapidminer-studio-9.5.1.zip
 exit
