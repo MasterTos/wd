@@ -1,6 +1,6 @@
 # wd
 ## Usage
-### 1. Login as wd user
+### 1. Login as `wd` user
 ### 2. Open Terminal
 ### 3. Active miniconda
 ```
