@@ -8,7 +8,8 @@ source ~/miniconda/bin/active
 ```
 ### 4. Open Rapidminer Studio
 ```
-cd ~/
+cd ~/rapidminer-studio
+./RapidMiner-Studio.sh
 ```
 
 ## Installation
